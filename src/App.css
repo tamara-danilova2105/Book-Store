@@ -145,6 +145,10 @@ body {
   font-weight: bold;
 }
 
+.formobil {
+  display: none;
+}
+
 @media all and (max-width: 500px) {
   .header {
     font-size: 25px;
@@ -185,5 +189,8 @@ body {
   margin-left: 0;
 }
 
+.formobil {
+  display: block;
 }
 
+}
