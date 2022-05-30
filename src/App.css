@@ -1,38 +1,189 @@
-.App {
+body {
+  margin: 0;
+}
+
+.fone {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header {
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+  color: #4C3575;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+}
+
+.header:hover {
+  color: #C70A80;
+}
+
+.link {
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-left: 40px;
+  color: #C70A80;
+  text-shadow: 1px 1px #4C3575;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #4C3575;
+}
+
+.container-genres {
+  margin-top: 50px;
+}
+
+.genre-card {
+  width: 500px;
+  margin: 20px;
+}
+
+.img-genres {
+  width: 100%;
+  height: auto;
+}
+
+.container-carousel {
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+.carousel-text {
+  font-family: 'Comfortaa', cursive;
+  color: #C70A80;
+  text-shadow: 1px 1px black;
+  background-color: #fffafd96;
+  padding: 5px;
+}
+
+
+.text-title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text {
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header-genres {
+  font-family: 'Comfortaa', cursive;
+  margin-left: 40px;
+  font-size: 28px;
+  color: #4C3575;
+  text-shadow: 1px 1px black;
+  margin-bottom: 30px;
+}
+
+.container-books {
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.book-image {
+  width: 250px;
+  height: 350px;
+  margin-top: 10px;
+}
+
+.margin {
+  margin: 20px;
+}
+
+/* книги */
+
+.card-container {
+  margin: 20px;
+}
+
+.card-header {
+  font-family: 'Comfortaa', cursive;
+}
+
+.card-text {
+  font-family: 'Comfortaa', cursive;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-image {
+  width: 250px;
+  height: 350px;
+  margin-left: 35px;
+}
+
+.card-btn {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  margin: 20px;
+}
+
+/* readme */
+
+.accordion-readme {
+  font-family: 'Comfortaa', cursive;
+  margin-left: 10%;
+}
+
+.bolder {
+  font-weight: bold;
+}
+
+@media all and (max-width: 500px) {
+  .header {
+    font-size: 25px;
+    margin-left: 15px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .link {
+    font-size: 25px;
+    margin-left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container-genres {
+    margin-top: 20px;
+    margin-left: 0;
   }
+
+  .header-genres {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  .w-50 {
+    width: 100%!important;
 }
+
+.container-books {
+  width: 90%;
+  margin-left: 17px;
+  margin-top: 0;
+}
+
+.card-container {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.container-carousel, .accordion-readme {
+  margin-left: 0;
+}
+
+}
+
