@@ -13,7 +13,6 @@ const CarouselBook = () => {
                 alt="First slide"
                 />
             <Carousel.Caption>
-            <h3 className='carousel-text'>Заголовок слайда 1</h3>
             <p className='carousel-text'>Дом, в котором нет книг, подобен телу, лишенному души.</p>
             </Carousel.Caption>
         </Carousel.Item>
@@ -25,7 +24,6 @@ const CarouselBook = () => {
                 alt="Second slide"
                 />
             <Carousel.Caption>
-            <h3 className='carousel-text'>Заголовок слайда 2</h3>
             <p className='carousel-text'>Как из копеек составляются рубли, так и из крупинок прочитанного составляется наши знания.</p>
             </Carousel.Caption>
         </Carousel.Item>
@@ -37,7 +35,6 @@ const CarouselBook = () => {
                 alt="Third slide"
                 />
             <Carousel.Caption>
-            <h3 className='carousel-text'>Заголовок слайда 3</h3>
             <p className='carousel-text'>Беседовать с писателями других веков — почти то же самое, что путешествовать во времени.</p>
             </Carousel.Caption>
         </Carousel.Item>
