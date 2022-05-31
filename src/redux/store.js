@@ -15,9 +15,11 @@ import {
 import storage from 'redux-persist/lib/storage'
 
 import myBook from './favouritesSlice'
+import readDone from './readSlice'
 
 const rootReducer = combineReducers({
-    myBook
+    myBook,
+    readDone
 })
 
 const persistConfig = {
