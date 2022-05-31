@@ -200,6 +200,7 @@ body {
 
 .search {
   margin-left: 100px;
+  width: 350px;
   font-family: 'Comfortaa', cursive;
 }
 
@@ -300,7 +301,8 @@ body {
   }
 
   .search {
-    margin-left: 35px;
+    margin-left: 33px;
+    width: 329px;
   }
 
 }

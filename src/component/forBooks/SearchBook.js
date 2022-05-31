@@ -1,15 +1,10 @@
-import { Button, Form, FormControl } from "react-bootstrap"
+import { Form, FormControl } from "react-bootstrap"
 
-const SearchBook = () => {
+const SearchBook = ({ setValueSearch }) => {
+
     return(
-        <Form className="search d-flex">
-            <FormControl
-            type="search"
-            placeholder="Поиск книги..."
-            className="me-2"
-            aria-label="Search"
-            />
-            <Button variant="outline-success">НАЙТИ</Button>
+        <Form onChange={(e) => setValueSearch(e.target.value)} className="search d-flex">
+            <FormControl placeholder="Введите название книги..." className="me-2"/>
         </Form>
     )
 }

@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { useSelector } from "react-redux"
 import BookItem from "../component/forBooks/BookItem"
 import ButtonFilter from "../component/forBooks/ButtonFilter"
@@ -11,14 +12,23 @@ const Books = () => {
     const booksList = useSelector(getMyBook)
     const selectedGenre = useSelector(getSelectedGenre)
 
+    const [valueSearch, setValueSearch] = useState('')
+    const searchResult = books.filter(book => {
+        return book.name.toLocaleLowerCase().includes(valueSearch.toLocaleLowerCase().trim())
+    })
+    console.log(valueSearch);
+    console.log(searchResult);
+
     return(
         <div>
             <div className="d-flex flex-row flex-wrap">
-                <ButtonFilter />
-                <SearchBook />
+                <ButtonFilter/>
+                <SearchBook setValueSearch={setValueSearch}/>
             </div>
             <div className="container-books row row-cols-1 row-cols-md-3 mb-3 text-center">
-                {books
+                {searchResult.length < 1 
+                ? <h2 className="header-read">По вашему запросу ничего не найдено...</h2>
+                : searchResult
                 .filter(book => {
                     if(selectedGenre === 'Все') return true;
                     return selectedGenre === book.genre
