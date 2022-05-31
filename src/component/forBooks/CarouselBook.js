@@ -24,7 +24,7 @@ const CarouselBook = () => {
                 alt="Second slide"
                 />
             <Carousel.Caption>
-            <p className='carousel-text'>Как из копеек составляются рубли, так и из крупинок прочитанного составляется наши знания.</p>
+            <p className='carousel-text'>Как из копеек составляются рубли, так и из крупинок прочитанного составляется знания.</p>
             </Carousel.Caption>
         </Carousel.Item>
 

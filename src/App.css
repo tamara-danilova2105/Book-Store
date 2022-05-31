@@ -221,7 +221,7 @@ body {
 }
 
 .container-carousel, .accordion-readme {
-  margin-left: 0;
+  margin-left: 18px;
 }
 
 .formobil {
@@ -233,7 +233,9 @@ body {
   margin-left: 0;
   }
 
-.container-favorite {
+.container-favorite,
+.container-carousel, 
+.accordion-readme {
   width: 90%;
   margin-left: 35px;
   margin-top: 30px;
@@ -250,7 +252,10 @@ body {
     width: 100%;
   }
 
-  .container-favorite {
+  .container-favorite,
+  .container-carousel, 
+  .accordion-readme {
     margin-left: 18px;
   }
+
 }
