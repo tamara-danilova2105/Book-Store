@@ -189,6 +189,20 @@ body {
   text-align: start;
 }
 
+/* фильтр */
+
+.btn-filter {
+  width: 150px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.search {
+  margin-left: 100px;
+  font-family: 'Comfortaa', cursive;
+}
+
 @media all and (max-width: 900px) {
   .header {
     font-size: 25px;
@@ -256,6 +270,15 @@ body {
 .header-read {
     margin-left: 40px;
   }
+
+  .btn-filter {
+    width: 120px;
+    margin-left: 10px;
+  }
+
+  .search {
+    margin-left: 10px;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -268,6 +291,16 @@ body {
   .accordion-readme,
   .header-read {
     margin-left: 18px;
+  }
+
+  .btn-filter {
+    width: 140px;
+    margin-bottom: 15px;
+    margin-left: 35px;
+  }
+
+  .search {
+    margin-left: 35px;
   }
 
 }

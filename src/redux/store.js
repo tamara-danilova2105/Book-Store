@@ -16,15 +16,18 @@ import storage from 'redux-persist/lib/storage'
 
 import myBook from './favouritesSlice'
 import readDone from './readSlice'
+import filter from './filterSlice'
 
 const rootReducer = combineReducers({
     myBook,
-    readDone
+    readDone,
+    filter
 })
 
 const persistConfig = {
     key: 'root',
     storage,
+    blacklist: ['filter']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
