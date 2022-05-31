@@ -180,7 +180,7 @@ body {
   height: 350px;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   .header {
     font-size: 25px;
     margin-left: 15px;
@@ -202,8 +202,10 @@ body {
   }
 
   .w-50 {
-    width: 100%!important;
-}
+    width: 90%!important;
+  }
+
+
 
 .container-books {
   width: 90%;
@@ -214,6 +216,8 @@ body {
 .card-container {
   margin: 0;
   margin-top: 15px;
+  margin-right: 10px;
+  width: 45%;
 }
 
 .container-carousel, .accordion-readme {
@@ -222,20 +226,31 @@ body {
 
 .formobil {
   display: block;
-}
+  }
 
 .empty-images {
   width: 100%;
   margin-left: 0;
-}
+  }
 
 .container-favorite {
   width: 90%;
-  margin-left: 0;
+  margin-left: 35px;
   margin-top: 30px;
+  }
+
+.btn-favorites {
+    margin: 10px;
+    width: 300px;
+}
 }
 
+@media all and (max-width: 500px) {
+  .card-container {
+    width: 100%;
+  }
 
-
-
+  .container-favorite {
+    margin-left: 18px;
+  }
 }
