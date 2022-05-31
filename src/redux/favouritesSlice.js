@@ -12,7 +12,7 @@ export const favouritesSlice = createSlice({
         removeBookInFavorites: (state, action) => {
             state.booksArray = state.booksArray.filter(book => book.id !== action.payload)
         }
-    }
+    },
 })
 
 export const getMyBook = state => state.myBook.booksArray

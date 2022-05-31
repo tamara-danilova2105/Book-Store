@@ -21,7 +21,7 @@ const AccordionReadme = () => {
             <Accordion.Item eventKey="2">
                 <Accordion.Header>Введенные данные должны сохраняться на протяжении всей сессии браузера и не пропадать при перезагрузке страницы:</Accordion.Header>
                 <Accordion.Body>
-                Добавленные пользователем книги "в избранное" записаны в LocalStorage. 
+                Добавленные пользователем книги "в избранное" записаны в LocalStorage с Redux-Persist. 
                 Что позволяет сохранять данные даже после перезагрузки страницы
                 </Accordion.Body>
             </Accordion.Item>

@@ -180,7 +180,7 @@ body {
   height: 350px;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .header {
     font-size: 25px;
     margin-left: 15px;

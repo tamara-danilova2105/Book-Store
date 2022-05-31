@@ -6,7 +6,6 @@ const BookItem = ({ book, booksList }) => {
 
     const dispatch = useDispatch()
     const bookInList = booksList.some(item => item.id === book.id)
-    console.log(booksList);
 
     const handleBtn = () => {
         bookInList 
