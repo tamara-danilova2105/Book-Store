@@ -209,6 +209,16 @@ body {
   margin-top: 18px;
 }
 
+.add-comment {
+  margin-left: 19%;
+  width: 500px;
+}
+
+.btn-review {
+  margin-left: 30px;
+  width: 300px;
+}
+
 @media all and (max-width: 900px) {
   .header {
     font-size: 25px;
@@ -302,13 +312,26 @@ body {
   .btn-filter {
     width: 140px;
     margin-bottom: 15px;
-    margin-left: 25px;
+    margin-left: 35px;
   }
 
   .search {
-    margin-left: 25px;
+    margin-left: 35px;
     width: 345px;
     margin-top: -10px;
   }
+
+  .add-comment {
+    margin-left: 17px;
+    width: 90%;
+  }
+
+  .btn-review {
+    margin-left: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+
+
 
 }

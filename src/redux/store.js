@@ -17,17 +17,19 @@ import storage from 'redux-persist/lib/storage'
 import myBook from './favouritesSlice'
 import readDone from './readSlice'
 import filter from './filterSlice'
+import {commentsApi} from "./commetsSrvice"
 
 const rootReducer = combineReducers({
     myBook,
     readDone,
-    filter
+    filter,
+    [commentsApi.reducerPath]: commentsApi.reducer,
 })
 
 const persistConfig = {
     key: 'root',
     storage,
-    blacklist: ['filter']
+    blacklist: ['filter', 'commentsApi']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
@@ -39,7 +41,7 @@ export const store = configureStore({
         serializableCheck: {
             ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
         },
-    }),
+    }).concat(commentsApi.middleware),
 })
 
 export const persistor = persistStore(store)
