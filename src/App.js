@@ -36,7 +36,7 @@ function App() {
             <Nav>
               <Link to='/books' className='link' aria-current="page">книги</Link>
               <Link to='/favourites' className='link' aria-current="page">
-              избранное <Badge pill bg="success">{booksList.length}</Badge></Link>
+                  избранное {booksList.length > 0 ? <Badge pill bg="success">{booksList.length}</Badge> : null}</Link>
               <Link to='/reviews' className='link' aria-current="page">отзывы</Link>
               <Link to='/readme' className='link' aria-current="page">readme</Link>
             </Nav>

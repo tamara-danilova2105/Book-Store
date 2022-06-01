@@ -2,11 +2,6 @@ body {
   margin: 0;
 }
 
-.badge {
-  font-size: 18px;
-  font-family: 'Comfortaa', cursive;
-}
-
 .fone {
   object-fit: cover;
   width: 100vw;
