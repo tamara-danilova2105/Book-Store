@@ -16,8 +16,6 @@ const Books = () => {
     const searchResult = books.filter(book => {
         return book.name.toLocaleLowerCase().includes(valueSearch.toLocaleLowerCase().trim())
     })
-    console.log(valueSearch);
-    console.log(searchResult);
 
     return(
         <div>
