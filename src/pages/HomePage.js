@@ -3,6 +3,7 @@ import GenreItem from "../component/forBooks/GenreItem"
 import { genres } from "../data/genres"
 
 const HomePage = () => {
+
     return(
         <div className="container-genres">
             <h2 className="header-genres">Хорошая книга — это подарок, завещанный автором человечеству!</h2>
